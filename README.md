@@ -3,7 +3,20 @@ Azure DP-100 Data Scientist Study Guide
 
 Link to certification: [Azure DS-100](https://www.microsoft.com/en-us/learning/azure-data-scientist.aspx#section_skills_knowledge)
 
-Certification Objectives
+##Certification Objectives:
+
+### Define and prepare de development environment 
+- Select development environment
+May include but is not limited to: Assess the deployment environment constraints, analyze and recommend tools that meet system requirements, select the development environment
+
+- Set up development environment
+ May include but is not limited to: Create an Azure data science environment, configure data science work environments
+ [Azure Data Science Virtual Machines](https://azure.microsoft.com/en-us/services/virtual-machines/data-science-virtual-machines )
+
+- Quantify the business problem
+May include but is not limited to: Define technical success metrics, quantify risks
+
+### Develop Models
 
 - Select an algorithmic approach
   - Determine appropriate performance metrics
