@@ -3,7 +3,7 @@ Microsoft Certified: Azure Data Scientist Associate study guide (unofficial)
 
 Link to certification: [Azure DS-100](https://www.microsoft.com/en-us/learning/azure-data-scientist.aspx#section_skills_knowledge)
 
-##Certification Objectives:
+## Certification Objectives:
 
 ### Define and prepare de development environment 
 - Select development environment
@@ -15,6 +15,39 @@ May include but is not limited to: Assess the deployment environment constraints
 
 - Quantify the business problem
 May include but is not limited to: Define technical success metrics, quantify risks
+
+### Prepare data
+
+Transform data into usable datasets
+- develop data structures
+-  design a data sampling strategy
+-  design the data preparation flow
+
+Perform Exploratory Data Analysis (EDA)
+
+- Review visual analytics data to discover patterns and determine next steps
+    identify anomalies, outliers, and other data inconsistencies
+- Create descriptive statistics for a dataset
+
+Cleanse and transform data
+ 
+- Resolve anomalies, outliers, and other data inconsistencies.
+- Standardize data formats
+- Set the granularity for data
+
+
+### Perform feature Egineering
+
+Perform feature extraction
+
+⁻ Perform feature extraction algorithms on numerical data
+- Perform feature extraction algorithms on non-numerical data
+- Scale features
+
+Perform feature selection
+
+- Define the optimality criteria
+- Apply feature selection algorithms
 
 ### Develop Models
 
