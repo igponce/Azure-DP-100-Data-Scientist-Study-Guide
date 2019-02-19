@@ -1,0 +1,5 @@
+[book]
+authors = ["inigo_gonzalez"]
+multilingual = false
+src = "src"
+title = "Azure DP-100 Exam Data Scientist Study Guide"
