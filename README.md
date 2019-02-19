@@ -1,5 +1,5 @@
-# Azure-DP-100-Data-Scientist-Study-Guide
-Azure DP-100 Data Scientist Study Guide
+# Azure DP-100 Exam Data Scientist Study Guide
+Microsoft Certified: Azure Data Scientist Associate study guide (unofficial)
 
 Link to certification: [Azure DS-100](https://www.microsoft.com/en-us/learning/azure-data-scientist.aspx#section_skills_knowledge)
 
