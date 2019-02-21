@@ -15,4 +15,13 @@ May include but is not limited to: Define technical success metrics, quantify ri
 # A word of caution
 
 At first glance, this certification objectives look out of order.
-Why? because it makes more sense to quantify the business problem first, and then choose the tools (aka. development environment) that you will use fto 
+Why? because it makes more sense to quantify the business problem first, and then choose the tools (aka. development environment) that you will use for tacking the problem
+
+# Quantify the Business Problem
+
+A good start is taking a look at the [CRISP-DM](https://en.wikipedia.org/wiki/Cross-industry_standard_process_for_data_mining) methodology.
+CRISP-DM starts with a "Understand the business problem" phase.
+There is some stuff to take into account: 
+- What kind of problem we want to solve?
+- What's the current status? (the prior) Maybe this problem happens 1% of the time.
+- What's the impact on the business? Try to put a money amount on the event. For instance, that 1% event might cost $1000s to the company.
