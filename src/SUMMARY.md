@@ -2,7 +2,7 @@
 
 Azure DP-100 exam study guide
 
-- [Define and prepare the developmen environment](./chapter_1.md)
+- [Define and prepare the development environment](./chapter_1.md)
 
 - [Prepare Data](./chapter_2.md)
 
