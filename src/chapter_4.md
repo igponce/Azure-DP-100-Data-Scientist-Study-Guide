@@ -1,6 +1,6 @@
 # Chapter 4: Develop Models
 
-## Contents
+## Certification objetives covered
 
 - Select an algorithmic approach
   - Determine appropriate performance metrics
@@ -29,9 +29,26 @@
    - Identify root cause of performance results
 
 ## Select an algorithmic approach
+
+Consult the (Azure Machine Learning Algorhtm cheat sheet)[
+https://docs.microsoft.com/en-us/azure/machine-learning/studio/algorithm-cheat-sheet ]
+
 ### Determine appropriate performance metrics
+
 ### Implement appropriate algorithms
+
 ### Consider data preparation steps that are specific to the selected algorithms
+
+After selecting an algorithm, care must be taken to be sure data is in appropiate format for the algoritm to work.
+
+For instance, do we have categorical data?
+
+Some algorithms might not work with categorical data and might need to use a different representation for categorical variables (like one-hot-encoding).
+
+Other algorithms might work better when data is around [-1, 1] range, thus scaling and nomalizing might be needed befor training, and might be undone *after* inference if the dependent variable (what we want to predict) is scaled and normalized.
+
+This latter case is important when we are dealing with distances that have exponentiation (like euclidean distances).
+
 
 ## Split datasets
 ### Determine ideal split based on the nature of the data
