@@ -1,4 +1,4 @@
-# Chapter 1: Define and prepare the developmen environment
+# Chapter 1: Define and prepare the development environment
 
 ## Certification Objectives covered
 
@@ -36,5 +36,11 @@ Given this plethora of services... what can you do to get choose what suits best
 
 First, if there is an API for your problem, use that API (Image, text-to-speech, speet to text, etc.=
 If there is no API, we still have options:)
+
+Environment 1: Machine Learning Studio
+
+Environment 2: Machine Learning VM
+
+Environment 3: Custom
 
 # Setup development environment
