@@ -28,4 +28,4 @@ So, the first task for us is to make data available aas a bit table.
 If we're lucky that information will be held in a databse, and some data will look like a table without much work.
 IProbablt we can get that table information joining some tables we've got access to.
 
-In Azure we can prepare data 
+In Azure we can prepare data using Azure Machine Learning Studio.
