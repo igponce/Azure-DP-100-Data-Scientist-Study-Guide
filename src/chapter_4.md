@@ -52,21 +52,26 @@ This latter case is important when we are dealing with distances that have expon
 
 ## Split datasets
 ### Determine ideal split based on the nature of the data
-   - Determine number of splits
-   - Determine relative size of splits
-   - Ensure splits are balanced
+### Determine number of splits
+### Determine relative size of splits
 
-- Identify data imbalances
+### Ensure splits are balanced
+
+When we are splitting a malance dataset into train and test subsets randomly, we might be splitting the dataset inadvertently in an unbalance manner.
+
+Unbalanced data is a bad choice for training a machine learning algorithm because the model will be biased to the class with more training samples. The worst-case scenario is when the model overfits the majority class, and does not learn the minority one.
+
+# Identify data imbalances
    - Resample a dataset to impose balance
-   - Adjust performance metric to resolve imbalances
+   - Adjust performance metric to resolve imbalances 
    - Implement penalization
    
-- Train the model
-   - Select early stopping criteria
-   - Tune hyper-parameters
+## Train the model
+###  Select early stopping criteria
+### Tune hyper-parameters
 
-- Evaluate model performance
-   - Score models against evaluation metrics
-   - Implement cross-validation
-   - Identify and address overfitting
-   - Identify root cause of performance results
+## Evaluate model performance
+### Score models against evaluation metrics
+### Implement cross-validation
+### Identify and address overfitting
+### Identify root cause of performance results
