@@ -62,16 +62,52 @@ When we are splitting a malance dataset into train and test subsets randomly, we
 Unbalanced data is a bad choice for training a machine learning algorithm because the model will be biased to the class with more training samples. The worst-case scenario is when the model overfits the majority class, and does not learn the minority one.
 
 # Identify data imbalances
-   - Resample a dataset to impose balance
+
+## Resample a dataset to impose balance
+   See (Kaggle)[https://www.kaggle.com/rafjaa/resampling-strategies-for-imbalanced-datasets]
+
+Two possible strategies are *undersampling* and *oversampling*.
+
+**Undersampling** implies getting _less_ data from the majority class to match the number of samples in the minority.
+
+**Oversampling** is the opposite: we keep the majority class samples intact and make copies from the minority class samples until we match the number of samples in the majority class.
+
+An oversampling technique is (SMOTE)[Synthetic Minority Oversample TEchnique].
+
+**SMOTE** Oversampling consist in generating syntethic data samples between original ones.   
+
    - Adjust performance metric to resolve imbalances 
    - Implement penalization
-   
+
+
 ## Train the model
+
 ###  Select early stopping criteria
+
 ### Tune hyper-parameters
 
 ## Evaluate model performance
+
 ### Score models against evaluation metrics
+
 ### Implement cross-validation
+
 ### Identify and address overfitting
+
+Overfitting appears when your model learns the training set perfectly; but is not able to generalyze.
+
+Usually the model results with the training set will be better than with the test set... but not **way far** better.
+
+A model overfits when its **training** results are **much, much, better** than its **test result** and the test results are not good.
+
+How to address overfitting?
+
+Ovefitting occurs when you are fitting a model too powerful for the dataset you have.
+
+A good way to address this issue is **penalizing** the use of models with too many parameters, by adding the value of that parameters to the loss function, multiplied by a factor (that we call lambda)
+
+\\[ regularizedLoss(\theta,x) = loss(\theta, x) + \lambda \sum { \theta_i ^ 2 } \\]
+
+This is called **regularization**
+
 ### Identify root cause of performance results
