@@ -101,12 +101,37 @@ earlyStop = EarlyStopping(monitor='val_loss',
    mode = 'auto', # 'min' = loss should be descendig, 'max' = loss should be ascending, 'auto' = choose automatically from results on first run
    baseline = None, # Baseline value for the monitored quantity to reach. Training will stop if the model doesn't show improvement over the baseline.
    restore_best_weights = False )
-model.fit(x_train, y_train, batch_size=128, epochs=20, verbose=0, validation_data=(X_test, Y_test), callbacks=[checkpointer])
+model.fit(x_train, y_train, batch_size=128, epochs=20, verbose=0, validation_data=(X_test, Y_test), callbacks=[checkpointer, earlyStop ])
 
 
 ```
 
 ### Tune hyper-parameters
+
+We call **hyper-parameters** the arguments we supply to the machine learning algorithm (not the training data).
+
+For instance, a LeakyRelu activation function is defined as 
+
+\\[ f(x) = 
+   \begin{cases} 
+   x,          & \text{if $x$> 0 } \\\\
+   \beta x, & \text{ otherwise } 
+   \end{cases}
+\\]
+
+In this case \\( \beta \\) is an hyperparameter. It defines part of the model structure and remains fixed during the training; **but** there.
+
+Other kinds of hyperparameters examples are learning rate, tree depth (in random forest), etc.
+
+If *hyperparameters* are fixed during training, and shape so much the model performance and outcome, how can we choose the best values for them?
+
+The answer is simple, but surprising at first sight: training the model, and use gradient descent on the hyperparameter space to get the best values.
+
+This approach has a catch, too: you need data to find the best hyperparameter values, and that data cannot be used later for training or validation because you'll introduce bias.
+
+The solution is splitting the dataset into 3 subsets: Train, Test, and Cross-validation (xval).
+
+The cross-validation set wil be used first to get the best hyperparamenters for the model (or even choose which kind of model works best) 
 
 ## Evaluate model performance
 
