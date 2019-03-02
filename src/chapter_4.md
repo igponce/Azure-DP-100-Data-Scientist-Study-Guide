@@ -30,8 +30,7 @@
 
 ## Select an algorithmic approach
 
-Consult the (Azure Machine Learning Algorhtm cheat sheet)[
-https://docs.microsoft.com/en-us/azure/machine-learning/studio/algorithm-cheat-sheet ]
+Consult the [Azure Machine Learning Algorhtm cheat sheet](https://docs.microsoft.com/en-us/azure/machine-learning/studio/algorithm-cheat-sheet )    
 
 ### Determine appropriate performance metrics
 
@@ -74,7 +73,7 @@ Two possible strategies are *undersampling* and *oversampling*.
 
 An oversampling technique is (SMOTE)[Synthetic Minority Oversample TEchnique].
 
-**SMOTE** Oversampling consist in generating syntethic data samples between original ones.   
+**[SMOTE](https://imbalanced-learn.readthedocs.io/en/stable/over_sampling.html#smote-adasyn)** Oversampling consist in generating syntethic data samples between original ones.   
 
    - Adjust performance metric to resolve imbalances 
    - Implement penalization
