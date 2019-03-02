@@ -83,6 +83,29 @@ An oversampling technique is (SMOTE)[Synthetic Minority Oversample TEchnique].
 
 ###  Select early stopping criteria
 
+Sometimes you need to stop training a model because it does not improve.
+When you are training a model in front of a termina or notebook, it is easy to spot that the model does not improve, or it's overfitting.
+
+If you're running a model in the background as part of a process, or you are not able to monitor this training, then it is useful to have an early stopping criteria.
+
+For example, [Keras](https://keras.io) has a callback called [EarlyStopping]() that is triggered when the model does not improve after a number of epochs (defined by the 'patience' parameter):
+
+```{python}
+
+checkpointer = ModelCheckpoint(filepath='/tmp/weights.hdf5', verbose=1, save_best_only=True)
+
+earlyStop = EarlyStopping(monitor='val_loss',
+   min_delta=0.0001, 
+   patience = 4, # Number of epochs to wait without improvement
+   verbose = 0, 
+   mode = 'auto', # 'min' = loss should be descendig, 'max' = loss should be ascending, 'auto' = choose automatically from results on first run
+   baseline = None, # Baseline value for the monitored quantity to reach. Training will stop if the model doesn't show improvement over the baseline.
+   restore_best_weights = False )
+model.fit(x_train, y_train, batch_size=128, epochs=20, verbose=0, validation_data=(X_test, Y_test), callbacks=[checkpointer])
+
+
+```
+
 ### Tune hyper-parameters
 
 ## Evaluate model performance
