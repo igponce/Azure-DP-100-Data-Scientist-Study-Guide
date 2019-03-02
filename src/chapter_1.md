@@ -80,4 +80,4 @@ Microsoft Machine Learning Server (previously known as R Server) will allow you 
 
 # Setup development environment
 
-** TODO **
+** TODO: SETUP development environment **

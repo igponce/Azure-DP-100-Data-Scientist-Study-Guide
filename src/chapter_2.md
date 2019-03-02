@@ -133,6 +133,8 @@ With randimized data all samples have the same probability to be chosen, and fit
 distribution of the dataset.
 Non-probability sampling uses a deterministic criteria for sampling the data. For instance, getting the last 1000 samples, or last month of data.
 
+You can use out--the-box Stratified split inside Azure ML Studio.
+
 
 # Perform Exploratory Data Analysis (EDA)
 
