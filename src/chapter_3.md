@@ -18,5 +18,10 @@
 ## Scale features
 
 # Perform feature selection
+
+Techniques:
+- [ANOVA - ANalysis Of VAriance]()
+- [Fischer Linear Discriminant Analysis (LDA)](https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/fisher-linear-discriminant-analysis)
+
 ##  Define the optimality criteria
 ## Apply feature selection algorithms
