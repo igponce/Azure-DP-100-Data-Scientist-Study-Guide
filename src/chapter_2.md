@@ -135,14 +135,13 @@ Non-probability sampling uses a deterministic criteria for sampling the data. Fo
 
 You can use out--the-box Stratified split inside Azure ML Studio.
 
-
 # Perform Exploratory Data Analysis (EDA)
 
 Exploratory Data Analysis is the first tool you have in your belt when dealing with data.
 
 EDA looks at the variables and their statistics (mean,average, median, etc), and also pairs of values to discover relations that can be exploited when developing models.
 
-Types of EDA techniques:
+Typical of EDA techniques:
 
 - R, Python: summary of the dataframe.
    This will return mean, max, minimum, median, average values, and confidence interval around the mean for every variable.
@@ -151,8 +150,33 @@ Types of EDA techniques:
    Returns scatterplots for each pair of variables in the dataset. Useful to spot relations that could wokr. Not just linear relation; but also logarithmic, etc...
 
 - Azure Machine Learning Studio
-Just   
 
+Within Azure ML Studio you can do Exploratory Data Analysis from the browser.
+Just click on the dataset you want to explore:
+
+![Visualize Dataset from ML Studio](images/Azure-Exploratory-Data-Analysis_1.png)
+
+A new window inside Azure ML Studio will open showing you dataset characteristics.
+Here you can see all details from your dataset:
+
+![Visualize and compare variables](images/Azure-Exploratory-Data-Analysis_2.png)
+
+- Column names
+- Variable distribution (as histogram or box plot)
+- Some rows from the analytical data frame.
+
+If you click on a column, you'll also get:
+- Column statistics (max, min, median, mean, stantard deviation, unique values, missing values).
+- Detailed histogram or box plot (you can adjust the scale to log on all axes), including the CDF ![Variable histogram and CDF](images/Azure-Exploratory-Data-Analysis_4_histogram_cdf.png)
+- Comparision between the selected variable and others ![Variable comparison.](images/Azure-Exploratory-Data-Analysis_3_variableScatterplot.png)
+
+### Types of visualization
+
+| Visualization | Good for |
+|:--------------|:---------|
+| Histogram     | Great to find peaks and tails. I also like to use it to spot quickly if a distribution is multimodal. |
+| Boxplot       | Use it to spot quickly outliers |
+| Cummulative Function Distribution | Find median, heads and tails |
 
 # References
 [Towards Data Science: Sampling Techniques](https://towardsdatascience.com/sampling-techniques-a4e34111d808)
