@@ -3,6 +3,26 @@ Microsoft Certified: Azure Data Scientist Associate study guide (unofficial)
 
 Link to certification: [Azure DS-100](https://www.microsoft.com/en-us/learning/azure-data-scientist.aspx#section_skills_knowledge)
 
+# How to build
+
+This little book is written in Markdown using [MDBook](https://github.com/rust-lang-nursery/mdBook).
+If you want to render the book, you should install [Rust](https://rust-lang.org) first and then
+install MDBook from cargo:
+```{bash}
+cargo install mdbook
+```
+
+Once you have MDBook installed, you can compile the book just cd'ing to the root folder of this repository and executing: 
+```{bash}
+mdbook build
+2019-03-06 22:53:13 [INFO] (mdbook::book): Book building has started
+2019-03-06 22:53:13 [INFO] (mdbook::book): Running the html backend
+```
+
+The compiled book are located in the 📁 book folder.
+
+# Table of contents for the book
+
 ## Certification Objectives:
 
 ### Define and prepare de development environment 
