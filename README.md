@@ -19,9 +19,9 @@ mdbook build
 2019-03-06 22:53:13 [INFO] (mdbook::book): Running the html backend
 ```
 
-The compiled book are located in the 📁 book folder.
+The compiled book is located in the 📁 book folder.
 
-# Table of contents for the book
+# Book contents
 
 ## Certification Objectives:
 
