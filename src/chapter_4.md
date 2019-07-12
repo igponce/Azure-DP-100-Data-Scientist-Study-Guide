@@ -30,7 +30,7 @@
 
 ## Select an algorithmic approach
 
-Consult the [Azure Machine Learning Algorhtm cheat sheet](https://docs.microsoft.com/en-us/azure/machine-learning/studio/algorithm-cheat-sheet )    
+Consult the [Azure Machine Learning Algorihtm cheat sheet](https://docs.microsoft.com/en-us/azure/machine-learning/studio/algorithm-cheat-sheet )    
 
 ### Determine appropriate performance metrics
 
