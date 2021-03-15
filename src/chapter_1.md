@@ -52,12 +52,13 @@ The following options are available for machine learning in the Azure cloud.
 
 ## On-premises options
 
-The following options are available for machine learning on-premises. On-premises servers can also run in a virtual machine in the cloud.
+The following options are available for machine learning on-premises.
+On-premises servers can also run in a virtual machine in the cloud; but don't count on that. Sometimes you *need* to use on-prem services for compliance and/or regulatory reasons.
 
 | On-premises option |	Description | Use case
 |:-------------------|:------------|:-----------------
 |SQL Server Machine Learning Services | Analytics engine embedded in SQL | Build and deploy models inside SQL Server
-|Microsoft Machine Learning Server | Standalone enterprise server for predictive analysis | Build and deploy models with R and Python
+|[Microsoft Machine Learning Server](https://docs.microsoft.com/en-us/machine-learning-server/what-is-machine-learning-server) | Standalone enterprise server for predictive analysis | Build and deploy models with R and Python
 
 ## Development tools
 
